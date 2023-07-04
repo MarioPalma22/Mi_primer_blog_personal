@@ -1,1 +1,2 @@
 # Mi_primer_blog_personal
+Este blog fue hecho con amor, sudor y lagrimas para la actividad integradora de la Universidad Tecnologica Nacional Cuyo ingreso se me fue concedido gracias a la Fundacion Emplear+Empujar
