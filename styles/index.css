@@ -1,0 +1,110 @@
+/* NO OLVIDAR: LE SACO EL PADDING Y MARGIN PARA CAMBIARLO A GUSTO DESPUES */
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(/assets/bg.svg);
+    /*WEIRD PATTERN THAT I FOUND ONLINE        
+    background:
+    radial-gradient(black 3px, transparent 4px),
+    radial-gradient(black 3px, transparent 4px),
+    linear-gradient(#fff 4px, transparent 0),
+    linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
+    linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
+    #fff;
+    background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
+    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px; */
+}
+/* TITULO */
+.title{
+    display: flex;
+    max-height: 100px;
+    padding: 10px;
+    background-color: rgb(255, 144, 144);
+    position: relative;
+    color: white;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    box-sizing: border-box;
+}
+.title .list ul{
+    list-style-type: none;
+}
+.title .list li a{
+    text-decoration:none;
+}
+/* CONTENEDOR */
+.container{
+    background-color: #0D2E57;
+    width: 70%;
+    /*1 EM= 10 POINT SIZE*/ 
+    margin: 1em auto;
+    position: static center;
+
+
+    display: grid;
+    gap: 1.6em;
+    grid-template-columns:repeat(5,1fr)
+}
+.container > .header,
+.container > .content,
+.container > .ugly_ad,
+.container > .sidebar,
+.container > .footer {
+    padding: 10px;
+    background-color: #233E54;
+    border: 1px solid rgb(0, 0, 0);
+}
+.container .header,
+.container .footer{
+    background-color: #547EA1;
+    grid-column: 1/6;
+}
+.container .content{
+    grid-column: 2/6;
+}
+
+.container .sidebar{
+        grid-row-start: 2;
+        grid-column: 1/2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+.container .ugly_ad{
+    display: flex;
+    grid-column: 2/5;
+    max-width: 600px;
+}
+.container .ugly_ad .adware{
+    border: 1px solid black;
+    padding: 1px;
+    margin: 5px;
+    align-items: center;
+}
+.container .content_article{
+    background-color: #547EA1;
+    padding: 1rem;
+    border: 1px solid black;
+}
+
+
+
+@media screen and (max-width:769px){
+    *{color: aqua;}
+    .container{
+        max-width: fit-content auto;
+        position: static center;
+        grid-template-columns: repeat(2,1fr);
+        margin: 0;
+        grid-area: auto;
+    }
+    .container .content{
+        grid-column: 2/5;
+    }
+    .container .sidebar{
+        grid-column: 1;
+    }
+} 
