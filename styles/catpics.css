@@ -1,0 +1,20 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(/assets/images/bg.svg);
+}
+
+/* TITULO */
+.title{
+    display: flex;
+    max-height: 100px;
+    padding: 10px;
+    background-color: rgb(40, 25, 25);
+    position: relative;
+    color: white;
+    justify-content: space-around;
+
+
+    position: sticky;
+    top: 0;
+}
