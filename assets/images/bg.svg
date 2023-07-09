@@ -1,0 +1,22 @@
+<svg width="9000" height="9000" viewBox="0 0 9000 9000" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="9000" height="9000" fill="#D9D9D9"/>
+<rect width="9000" height="9000" fill="url(#paint0_linear_2_6)"/>
+<rect width="9000" height="9000" fill="black" fill-opacity="0.2"/>
+<defs>
+<linearGradient id="paint0_linear_2_6" x1="0" y1="9000" x2="10769.5" y2="5592.47" gradientUnits="userSpaceOnUse">
+<stop offset="0.00678866" stop-color="#324942"/>
+<stop offset="0.169895" stop-color="#2F4746"/>
+<stop offset="0.286487" stop-color="#2C4549"/>
+<stop offset="0.383646" stop-color="#28424D"/>
+<stop offset="0.414509" stop-color="#27424E"/>
+<stop offset="0.453944" stop-color="#264150"/>
+<stop offset="0.481949" stop-color="#254051"/>
+<stop offset="0.547103" stop-color="#233E54"/>
+<stop offset="0.640834" stop-color="#1F3C58"/>
+<stop offset="0.795718" stop-color="#1D3A5A"/>
+<stop offset="0.875731" stop-color="#1C395C"/>
+<stop offset="0.944315" stop-color="#1E3657"/>
+<stop offset="1" stop-color="#0D2549"/>
+</linearGradient>
+</defs>
+</svg>
