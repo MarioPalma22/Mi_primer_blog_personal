@@ -144,6 +144,9 @@ body{
         justify-content: space-around;
         box-shadow: rgba(0, 0, 0, 0.521) 5px 5px 0px 5px;
         bottom: 0;
+        flex-wrap: wrap;
+        align-content: space-around;
+        justify-content: space-evenly;
 }
 .footer .f_div{
     display: flex;
