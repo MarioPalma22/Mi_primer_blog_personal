@@ -1,7 +1,19 @@
+:root{
+    --height: 312px;
+}
 body{
     margin: 0;
     padding: 0;
-    background-image: url(/assets/images/bg.svg);
+    /* background-image: url(/assets/images/bg.svg); */
+    background-image: linear-gradient(315deg ,white 25%, transparent 25%),
+    linear-gradient(225deg, white 25%, transparent 25%),
+    linear-gradient(135deg, white 25%, transparent 25%),
+    linear-gradient(45deg, white 25%, transparent 25%)
+    ;
+    background-position-x: 0, 0, 0, 0;
+    background-position-y: 0, 0, calc(var(--height) /2), calc(var(--height) /2);
+    background-size: var(--height) var(--height);
+    background-color: rgb(52, 97, 164);
 }
 
 .title{
@@ -14,8 +26,6 @@ body{
     color: white;
     justify-content: space-around;
     box-shadow: rgba(0, 0, 0, 0.521) 5px 5px 17px 11px;
-
-
     position: sticky;
     top: 0;
 }
@@ -47,7 +57,7 @@ body{
 .container .content {
     padding: 20px;
     grid-row-start: 2;
-    background-color: rgb(90, 90, 33);
+    background-color: rgba(64, 64, 64, 0.47);
     grid-column: 2/6;
 }
 .container .content .content_article{
@@ -74,6 +84,23 @@ body{
         border-radius: 5px;
         background-color: #547EA1;
     }
+
+.container .ugly_ad:hover{
+        background-color: rgba(255, 0, 0, 0.327);
+        zoom: 110%;
+}
+
+.floating{
+    animation: floating 4s ease-in-out infinite;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+@keyframes floating{
+    0% {transform: translate(0, 2px);}
+    50% {transform: translate(0, 10px);}
+    100% {transform: translate(0, 2px);}
+}
 
 
 @media screen and (max-width:1025px){

@@ -40,7 +40,6 @@ body{
     width: 70%;
     margin: 1rem auto;
 
-
     display: grid;
     gap: 1.6em;
     grid-template-columns:repeat(5,1fr)
@@ -69,7 +68,7 @@ body{
     border: 3px solid black;
 }
 .container .content_article .cat_lorem{
-    max-width: 300px;
+    max-width: 600px;
     text-overflow: ellipsis;
 }
 
@@ -78,12 +77,10 @@ body{
 .container{
     grid-column: 1/6;
 }
+
 .container .content{
     grid-column: 2/6;
 }
-
-/* SIDEBAR */
-
 
 .container .sidebar{
         padding: 10px;
@@ -98,10 +95,10 @@ body{
         background-color: #547EA1;
     }
 
-
 /* ANUNCIOS FEOS */
 .container .ugly_ad{
-    padding: 10px;
+    border-radius: 5px;
+    padding: 20px;
     display: flex;
     grid-column: 2/5;
     background-color: #547EA1;
@@ -116,12 +113,22 @@ body{
     margin: 5px;
     align-items: center;
     justify-content: center;
-    animation-delay: 20%;
+
 
 }
-.container .ugly_ad :hover{
-    background-color: rgba(255, 0, 0, 0.545);
-
+.container .ugly_ad:hover{
+        background-color: rgba(255, 0, 0, 0.327);
+        zoom: 110%;
+    }
+.floating{
+    animation: floating 4s ease-in-out infinite;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+@keyframes floating{
+    0% {transform: translate(0, 2px);}
+    50% {transform: translate(0, 10px);}
+    100% {transform: translate(0, 2px);}
 }
 /* FOOTER  */
 .footer{
@@ -141,7 +148,7 @@ body{
 }
 @media screen and (max-width:1025px){
     .container .ugly_ad {
-        grid-column: 2;
+        grid-column: 2/5;
 }
 }
 @media screen and (max-width:769px){
@@ -186,13 +193,14 @@ body{
         grid-row: 3;
         grid-column: 1/6;
         column-gap: 0;
+        align-items: flex-start;
     }
     .container .ugly_ad{
         flex-direction: column;
         overflow: auto;
         column-gap: 0;
         grid-row: 4;
-        grid-column: 1/6;
+        grid-column: 2/5;
         max-height: 500px;
     }
 }
