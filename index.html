@@ -5,43 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/index.css">
     <link rel="icon" href="/assets/images/icon.png">
-    <title>Integrador Grid</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Ysabeau+SC&display=swap" rel="stylesheet">
+    <title>Integrador</title>
 </head>
 <body>
     <header class="title">
-        <h1><a href="/index.html">Sitio web</a></h1>
+        <h1 tabindex="1"><a href="/index.html">Sitio web de los años 80</a></h1>
         <nav class="list">
             <ul>
-                <li class="list_item"><a href="/index.html">Home</a></li>
-                <li class="list_item"><a href="">menu 2</a></li>
-                <li class="list_item"><a href="">socotroco 3</a></li>
+                <li tabindex="2" class="list_item"><a href="/index.html">Home</a></li>
+                <li tabindex="3" class="list_item"><a href="">menu 2</a></li>
+                <li tabindex="4" class="list_item"><a href="">socotroco 3</a></li>
             </ul>
         </nav>
     </header>
     <div class="container">
         <header class="header">
-            <h1>logo</h1>
+            <h1>Sitio Principal</h1>
         </header>
         <main class="content">
             <article class="content_article">
-                <h2>Fotos de mi gata</h2>
+                <h2 tabindex="5">Fotos de mi gata.</h2>
                 <img src="/assets/images/cat.jpg" height="250px" alt="Ella">
-                <p>Fotos de mi gata porque no se que mas poner</p>
-                <p>Se llama Ella</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus id qui inventore. Vitae aperiam, odio doloribus assumenda deserunt quasi delectus repellat blanditiis nobis quia. Hic laudantium iste tenetur amet repellendus reprehenderit corporis nesciunt ad, dignissimos assumenda. Reiciendis, quod voluptatum.</p>
-                <p><a href="/assets/hmtl/ella.html">Ir</a></p>
+                <p>Fotos de mi gata porque no se que mas poner.</p>
+                <p>Se llama Ella.</p>
+                <p class="cat_lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus id qui inventore. Vitae aperiam, odio doloribus assumenda deserunt quasi delectus repellat blanditiis nobis quia. Hic laudantium iste tenetur amet repellendus reprehenderit corporis nesciunt ad, dignissimos assumenda. Reiciendis, quod voluptatum.</p>
+                <p><a tabindex="6" aria href="/assets/html/ella.html">Ir al articulo.</a></p>
             </article>
             <article class="content_article">
-                <h2>title</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex voluptatibus et, eveniet molestias impedit atque doloremque reiciendis repudiandae in fuga tempora quas?</p>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <p>Hola 2</p>
+                <h2 tabindex="7">Recursos utilizados</h2>
+                <img src="https://picsum.photos/200" alt="imagen random">
+                <p>Una lista de todos los recursos utilizados para hacer esta maravilla.</p>
+                <a tabindex="8" href="/assets/html/resources.html">Ir al articulo</a>
             </article>
             <article class="content_article">
-                <h2>title</h2>
+                <h2 tabindex="9"> title</h2>
+                <img src="https://picsum.photos/200" alt="imagen random">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex voluptatibus et, eveniet molestias impedit atque doloremque reiciendis repudiandae in fuga tempora quas?</p>
                 <p>Lorem ipsum dolor sit amet.</p>
-                <p>Hola 3</p>
+                <a tabindex="9" href="...">Ir al articulo</a>
             </article>
         </main>
         <aside class="sidebar">
@@ -49,47 +53,31 @@
             <!-- USE PICSUM PARA AGREGAR IMAGENES TEMPORALES -->
             <div class="sidebar_content">  
                 <img src="https://picsum.photos/200" alt="Imagen aleatoria">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <span tabindex="10">articulo de sidebar 1.</span>
             </div>
             <div class="sidebar_content">
                 <img src="https://picsum.photos/200" alt="Imagen aleatoria">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim.</p>
+                <span tabindex="11">articulo de sidebar 2.</span>
             </div>
             <div class="sidebar_content">
                 <img src="https://picsum.photos/200" alt="Imagen aleatoria">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, vel.</p>
+                <span tabindex="12">articulo de sidebar 3.</span>
             </div>
         </aside>
         <aside class="ugly_ad">
-            <div>Este sitio es posible gracias a nuestros sponsors</div>
-            <div class="adware">Anuncio molesto
+            <div tabindex="13">Este sitio es posible gracias a nuestros sponsors</div>
+            <a target="_blank" href="https://es.wikipedia.org/wiki/Especial:Aleatoria">Anuncio molesto</a>
                 <img src="/assets/images/ugly_ad.png" width="60px" alt="anuncio molesto">
-            </div>
-            <div class="adware">Anuncio molesto
-                <img src="/assets/images/ugly_ad.png" width="60px" alt="anuncio molesto">
-            </div>
-            <div class="adware">Anuncio molesto
-                <img src="/assets/images/ugly_ad.png" width="60px" alt="anuncio molesto">
-            </div class="adware">
-            <div class="adware">Anuncio molesto
-                <img src="/assets/images/ugly_ad.png" width="60px" alt="anuncio molesto">
-            </div>
         </aside>
-
-        <footer class="footer">
+    </div>
+    <footer class="footer">
+        <div class="f_div">
             <div>
                 <h2>Contactame</h2>
                 <a href="mailto:MarioPalma2211@protonmail.com">correo</a>
-                <p>derechos reservados: no se
-                </p>
-                <div class="footer_list">
-                    <ul>Elementos utilizados para crear esta obra de arte:
-                        <li>Picsum (para imagenes temporales)</li>
-                        <li>Gimp (Porque no quiero pagar photoshop)</li>
-                    </ul>
-                </div>
+                <span>Derechos reservados: MarioPalmaEnterprise ©1999</span>
             </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
 </body>
 </html>
