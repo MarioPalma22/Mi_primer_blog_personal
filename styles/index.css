@@ -129,6 +129,9 @@ body{
     background-color: rgba(255, 0, 0, 0.327);
     zoom: 110%;
 }
+
+
+/* ANIMACIÓNE */
 .floating{
 animation: floating 4s ease-in-out infinite;
 margin-top: 0px;
@@ -139,6 +142,9 @@ margin-bottom: 0px;
 50% {transform: translate(0, 10px);}
 100% {transform: translate(0, 2px);}
 }
+
+
+
 /* FOOTER  */
 .footer{
         display: flex;

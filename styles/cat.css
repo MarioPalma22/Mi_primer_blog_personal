@@ -1,19 +1,7 @@
-:root{
-    --height: 312px;
-}
 body{
     margin: 0;
     padding: 0;
-    /* background-image: url(/assets/images/bg.svg); */
-    background-image: linear-gradient(315deg ,white 25%, transparent 25%),
-    linear-gradient(225deg, white 25%, transparent 25%),
-    linear-gradient(135deg, white 25%, transparent 25%),
-    linear-gradient(45deg, white 25%, transparent 25%)
-    ;
-    background-position-x: 0, 0, 0, 0;
-    background-position-y: 0, 0, calc(var(--height) /2), calc(var(--height) /2);
-    background-size: var(--height) var(--height);
-    background-color: rgb(52, 97, 164);
+    background-image: url(/assets/images/bg.svg);
 }
 
 .title{
@@ -42,49 +30,26 @@ body{
     text-decoration:none;
 }
 
-.container {
+/* CONTENIDO DE ARTICULO */
+.container{
     display: grid;
-    justify-items: center;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns:repeat(4, 1fr);
+    gap: 1rem;
 }
 .container .header{
-    padding: 10px;
-    color: white;
-    background-image: url(/assets/images/bg.svg);
-    padding: 10px;
+    border: 2px solid black;
+    /* GRID COLUMN PARA EL ANCHO DEL GRID*/
     grid-column: 1/6;
 }
-.container .content {
-    padding: 20px;
-    grid-row-start: 2;
-    background-color: rgba(64, 64, 64, 0.47);
-    grid-column: 2/6;
+.container .content{
+    grid-row: 2;
+    grid-column:3/6
 }
-.container .content .content_article{
-        display: flex;
-        min-height: 450px;
-        background-color: #547EA1;
-        padding: 1rem;
-        border-radius: 5px;
-        gap: 10px;
-        flex-direction: column  ;
-        align-items: center;
-        box-shadow:  10px 10px rgba(0, 0, 0, 0.377);
-        border: 3px solid black;
+.container .content .sidebar{
+    grid-row: 2;
+    grid-column: 1;
 }
-.container .sidebar{
-        padding: 10px;
-        grid-row-start: 2;
-        grid-column: 1/2;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        box-shadow:  10px 10px rgba(0, 0, 0, 0.377);
-        border: 3px solid black;
-        border-radius: 5px;
-        background-color: #547EA1;
-    }
-
+.container .content .content_article
 .container .ugly_ad:hover{
         background-color: rgba(255, 0, 0, 0.327);
         zoom: 110%;
